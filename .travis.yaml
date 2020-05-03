@@ -18,7 +18,7 @@ before_install:
   - docker build -t rorschak/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run rorschak/react-test npm run test -- --coverage
+  - docker run roschak/react-test npm test -- --coverage
 
 deploy:
   provider: script
